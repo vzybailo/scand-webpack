@@ -1,0 +1,23 @@
+// colors
+$darkblue: #0A2640;
+$ctabg: #1C3D5B;
+$gray: #777777;
+$green: #65E4A3;
+$black: #000;
+
+// media
+$mobile: 480px;
+$tablet: 768px;
+$desktop: 1280px;
+
+//layout
+@import './scss/layout/mixins';
+@import './scss/layout/base';
+@import './scss/layout/fonts.scss';
+
+//sections
+@import './scss/sections/header';
+@import './scss/sections/hero';
+@import './scss/sections/news';
+@import './scss/sections/cta';
+@import './scss/sections/footer';

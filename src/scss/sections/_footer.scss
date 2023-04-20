@@ -1,0 +1,94 @@
+.footer {
+    padding: 10% 0;
+}
+.footer, .footer__right {
+    display: flex;
+}
+.footer__left {
+    width: 25%;
+    margin-right: 15%;
+    .logo {
+        display: inline-block;
+        margin-bottom: 40px;
+    }
+    @include tablet {
+        width: 33%;
+    }
+    @include mobile {
+        width: 50%;
+        margin-right: 10%;
+    }
+}
+.footer__right {
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.footer__about {
+    color: $gray;
+    line-height: 28px;
+    margin-bottom: 64px;
+}
+.footer__copyright {
+    color: $gray;
+}
+.footer__col {
+    margin-right: 23%;
+    &:nth-child(2n) {
+        margin-right: 15%;
+    }
+    &:last-child {
+        margin-right: 0;
+    }
+}
+.footer__title {
+    color: $black;
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 44px;
+    padding-top: 5px;
+    @include tablet {
+        margin-bottom: 20px;
+    }
+}
+.footer__list {
+    display: block;
+    @include tablet {
+        display: flex;
+    }
+    @include mobile {
+        flex-wrap: wrap;
+        margin-bottom: 15px;
+    }
+}
+.footer__item {
+    margin-bottom: 37px;
+    &:last-child {
+        margin-bottom: 0;
+    }
+    @include tablet {
+        margin-right: 35px;
+    }
+    @include tablet {
+        margin-bottom: 15px;
+    }
+}
+.footer__link {
+    display: flex;
+    font-size: 1.25rem;
+    color: $gray;
+}
+.hiring {
+    &:after {
+        content: 'Hiring';
+        display: block;
+        font-size: 13px;
+        font-weight: 700;
+        color: $darkblue;
+        padding: 4px 14px;
+        background-color: $green;
+        border-radius: 12px;
+        margin-left: 10px;
+    }
+}
